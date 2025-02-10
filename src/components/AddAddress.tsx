@@ -33,7 +33,7 @@ const AddAddress: React.FunctionComponent<IAddAddressProps> = (props) => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[1000px]">
         <DialogHeader>
-          <DialogTitle>Add Address</DialogTitle>
+          <DialogTitle>Add Your Address</DialogTitle>
           <DialogDescription>
             Fill all the required inputs. Click Add Address when you're done.
           </DialogDescription>

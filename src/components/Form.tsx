@@ -80,6 +80,8 @@ const Form: React.FunctionComponent<IFormProps> = (props) => {
   );
 
   return (
+    <div className='flex flex-col justify-center items-center'>
+      <h2 className='text-2xl font-bold '>{id?"Edit Address":"Add Address"}</h2>
     <form action="" onSubmit={handleSubmit(onSubmit)} className="max-w-3xl mb-4 mx-auto p-6 ">
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="md:col-span-2">
@@ -214,11 +216,12 @@ const Form: React.FunctionComponent<IFormProps> = (props) => {
 
         <div className="md:col-span-2">
           <Button className="mx-auto my-2 px-12 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold ">
-            Add Address
+            {id?"Edit Address":"Add Address"}
           </Button>
         </div>
       </div>
     </form>
+    </div>
   );
 };
 
