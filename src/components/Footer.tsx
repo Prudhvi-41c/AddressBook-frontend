@@ -7,8 +7,8 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
 
   return (
     <footer className="bg-gray-100 py-4 px-8 text-center">
-      <p className="text-gray-700">
-        &copy; {currentYear} Prudhvi. All rights reserved. | Cimpress India
+      <p className="text-gray-700 text-sm">
+        &copy; {currentYear} All rights reserved | Cimpress India
       </p>
     </footer>
   );

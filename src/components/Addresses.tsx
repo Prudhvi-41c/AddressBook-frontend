@@ -30,9 +30,9 @@ const Addresses: React.FunctionComponent<IAddressesProps> = ({ addresses, fetchA
     <>
       <div className="p-20"> 
         <h1 className="text-3xl font-bold mb-4">Your Addresses</h1> 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ">
           {sortedAddresses.map((address) => (
-            <Card key={address.id}>
+            <Card key={address.id} className='shadow-[4px_4px_0px_rgba(0,0,0,1)] border border-black rounded-none'>
               <CardHeader>
                 <CardTitle className="font-bold text-lg">{address.title}</CardTitle>
               </CardHeader>
